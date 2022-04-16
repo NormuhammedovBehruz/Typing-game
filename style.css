@@ -1,0 +1,120 @@
+/* Global */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-image: url("./typing game.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 5px #fff;
+    border-radius: 40px;
+    padding: 60px 40px;
+    gap: 35px;
+}
+
+.title {
+    text-shadow: 5px 3px 2px #00fff2;
+}
+
+.container h2 {
+    font-size: 30px;
+}
+
+.text-input {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.container-text {
+    font-size: 1.2rem;
+}
+
+.random-word {
+    user-select: none;
+}
+
+.modal {
+    width: 400px;
+    height: 240px;
+    background-color: #f6f6f6;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 100;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px red;
+}
+
+.modal-title {
+    color: #000;
+    font-size: 3rem;
+    text-align: center;
+    user-select: none;
+    margin: 0;
+    box-shadow: 0 0 10px 5px #000;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+.modal .score {
+    color: #000;
+    border: 1px solid;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.modal-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    bottom: none;
+    display: flex;
+    margin-left: 276px;
+    transition: 0.2s;
+}
+
+.modal-btn:hover {
+    background-color: black;
+    color: red;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    z-index: 50;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Behruz's typing game</h1>
+
+        <h2 class="random-word">...</h2>
+
+        <input type="text" class="text-input">
+
+        <p class="container-text">
+            Time:
+            <span class="time">0</span>
+        </p>
+    </div>
+
+    <div class="modal hidden">
+        <h1 class="modal-title">Game over</h1>
+        <p class="score">
+            Score:
+            <span class="score-counter">0</span>
+        </p>
+        <button class="modal-btn">Refresh</button>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
